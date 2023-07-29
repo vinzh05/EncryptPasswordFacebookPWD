@@ -15,5 +15,3 @@ JObject jObject = JObject.Parse(response);
 string key_id = jObject.SelectToken("encryption.key_id")?.ToString();
 
 string public_key = jObject.SelectToken("encryption.public_key")?.ToString();
-
-string version = jObject.SelectToken("encryption.version")?.ToString();
